@@ -8,3 +8,9 @@ mongod --version
 sudo systemctl start mongod
 sudo systemctl status mongod
 mongosh
+sudo systemctl restart mongod
+sudo apt-get install -y git
+git clone -b v3.x https://github.com/NodeBB/NodeBB.git nodebb
+cd nodebb
+./nodebb setup
+./nodebb start
